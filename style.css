@@ -89,7 +89,7 @@ figure img {
 figcaption {
     font-size: 0.9em;
     color: #ccc;
-    text-align: center;
+    text-align: left;
     margin-top: 5px;
 }
 
@@ -114,6 +114,7 @@ aside {
     width: 30%;
     box-shadow: 0 0 10px #000;
     height: fit-content;
+   
 }
 
 aside h3 {
@@ -147,7 +148,8 @@ footer {
         flex-direction: column;
     }
 
-    article, aside {
+    article,
+    aside {
         width: 100%;
     }
 
@@ -155,4 +157,84 @@ footer {
         display: inline-block;
         margin: 10px;
     }
+
+}
+
+
+
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin:20px  auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #000;
+    aspect-ratio: 16 / 9;
+    min-height: 240px;
+
+}
+
+
+
+/* a képek egymás mögé kerülése*/
+.slides {
+    position: absolute;
+    display: flex;
+    inset: 0;
+    opacity: 0;
+    animation: slideshow 12s infinite;
+    justify-content: center;
+    align-items: center;
+}
+
+.slides img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Az első kép indul 0s-nál */
+.slides:nth-child(1) {
+    animation-delay: 0s;
+}
+
+/* Második kép indul 3s-nál */
+.slides:nth-child(2) {
+    animation-delay: 4s;
+}
+
+/* Harmadik kép indul 6s-nál */
+.slides:nth-child(3) {
+    animation-delay: 8s;
+}
+
+@keyframes slideshow {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
 }
