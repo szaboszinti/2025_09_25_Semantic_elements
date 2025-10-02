@@ -107,4 +107,154 @@ button[type="reset"]:hover {
     background-color: #777;
 }
 
+/*a kinezet a style cssbol*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+/* Fejléc */
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #ff0000;
+}
+
+header h1 {
+    margin: 0;
+    color: #ff4747;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+/* Navigáció */
+nav {
+    background-color: #2a2a2a;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav a {
+    color: #f0f0f0;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;   
+}
+
+nav a:hover {
+    color: #ff4747;
+}
+
+/* Tartalom (main) */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Cikkek (film blokkok) */
+article {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 65%;
+    box-shadow: 0 0 10px #000;
+}
+
+article h1 {
+    color: #ff4747;
+}
+
+article time {
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+article p {
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+figure {
+    margin: 20px 0;
+}
+
+figure img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #ccc;
+    text-align: left;
+    margin-top: 5px;
+}
+
+/* Részletek (details) */
+details summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #ffd700;
+    margin-top: 10px;
+}
+
+details p {
+    margin-top: 10px;
+    color: #ddd;
+}
+
+/* Oldalsáv */
+aside {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 0 10px #000;
+    height: fit-content;
+   
+}
+
+aside h3 {
+    color: #ff4747;
+}
+
+aside ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+aside li {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+/* Lábléc */
+footer {
+    background-color: #2a2a2a;
+    text-align: center;
+    padding: 15px;
+    color: #aaa;
+    border-top: 2px solid #ff0000;
+    margin-top: 40px;
+}
+
 
